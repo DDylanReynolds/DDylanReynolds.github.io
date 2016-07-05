@@ -1,0 +1,106 @@
+
+html {background: url("../Images/abstract.jpg") fixed 100%;}
+
+body {
+  overflow: auto;
+}
+
+/*This is the Top Part including nav*/
+.topContainer {background-color: #0D0D0D;
+				width: 100%;
+				opacity: .75;
+			}
+#visTop {padding-left: 1.5em;
+		color: #FFF;}
+
+/*This makes the hover effect have a curved outline*/
+.pure-menu-link {border-radius: 40px;}
+
+
+
+.whereWeWrite {background-color: white;
+				margin-top: 2em;
+				padding: 0em .75em;
+				border-radius: 2em
+				} 
+.whereWeWrite > p {padding-left: .75em;
+					text-indent: 1em;
+					line-height: 1.5em;}
+/*this div is currently only used in wholesaling.html*/
+
+
+
+
+/*Makes  the ghost div border, centers it, and aligns its text*/
+#ghostTop {margin: 8em auto;
+			border: 1px solid white;
+			color: white;
+			max-width: 50%;
+			text-align: center;}
+											/*Expirament with button stuff to get it to actually center*/
+.buttonT {background-color: teal;
+			position: relative;
+			margin: 0 auto;
+			}
+.buttonContainer {margin: 0 auto;
+					max-width: 7.5em;
+					position: relative;}
+
+.scrollOver {position: fixed;
+			height: 25em;
+			width: 100%;
+			}
+
+#invisibleTop {visibility: hidden;}
+
+.mainContainer {margin-top: 40%;
+	position: relative;
+	background: url("../Images/Mirror.jpg") fixed 100%;
+	z-index: 1;
+			}
+
+
+.main {min-height: 42em;
+		z-index: 1;
+		background-color: rgba(0, 128, 128, .4);	
+		}
+.main > h1 {text-align: center;
+			color: black;
+			}
+.main > p {text-align: center;
+			font-size: 1.5em;}
+
+.pure-menu-list {background-color: #191919;
+height: 100%;}
+
+.pure-menu-item {text-align:center;}
+
+.thirdContainer {background: url("../Images/abstract.jpg") fixed 100%;
+				z-index: 1;
+				height: 42em;
+				position: relative;}
+.third {background-color: rgba(51, 51, 51, .6);
+		z-index: 1;
+		height: 42em;
+		margin: 0;
+		position: relative;
+	}
+
+.back1 {background: url("../Images/beach.jpg") fixed 100%;
+	height: 42em;
+	z-index: 1;
+	position: relative;}
+
+/*Fix backshade on Firefox*/
+.back1Shade {
+			height: 42em;
+			z-index: 1;
+			position: relative;}
+
+#footer {background-color: #0D0D0D;
+	color: #FFF;
+	min-height: 8em;
+}
+
+
+
