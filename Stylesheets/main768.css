@@ -29,7 +29,8 @@ body {
 /*this div is currently only used in wholesaling.html*/
 
 
-
+#main {
+margin-top: 95%; } /*this is where the sooth scroll lands, it isn't visible.*/
 
 /*Makes  the ghost div border, centers it, and aligns its text*/
 #ghostTop {margin: 5em auto;
@@ -46,10 +47,12 @@ body {
 					max-width: 7em;
 					position: relative;}
 
+.buttonT > a {text-decoration: none;
+			color: black;}
 .scrollOver {position: fixed;
 			height: 100%;
 			width: 100%;
-			z-index: -1;
+			z-index: 5;
 			}
 
 #invisibleTop {visibility: hidden;}
