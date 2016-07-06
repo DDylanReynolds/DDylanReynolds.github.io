@@ -12,24 +12,7 @@
 </head>
 
 <body>
-<!--FacebookSDK-->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1112817232124597',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 <!-- Top part- -->
 	<div class="pure-menu-fixed topContainer">
 		<h1 id = "visTop" class = "pure-u-1-4"><a href = "index.html">StartREI</a></h1>
@@ -106,15 +89,16 @@
 		
 </body>
 <script>
+
 $( window ).scroll(function() {
-  // If user didn't scroll 1200px set default z-index
   if ($(this).scrollTop()<65) { 
       $(".scrollOver" ).css( "z-index", 5);
   } else {
-      // If user scrolled 1200px change logo's z-index to 9999  
-      $(".scrollOver" ).css( "z-index",  -5);
+      $(".scrollOver" ).css( "z-index", -5);
   }
 });
+</script>
+<script>
 /*!
  * jQuery Smooth Scroll - v1.7.2 - 2016-01-23
  * https://github.com/kswedberg/jquery-smooth-scroll
