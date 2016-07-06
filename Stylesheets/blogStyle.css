@@ -10,6 +10,8 @@ body {
 				width: 100%;
 				opacity: .75;
 			}
+.topContainer > h1 > a {text-decoration: none;
+						color: white;}
 #visTop {padding-left: 1.5em;
 		color: #FFF;}
 
@@ -21,13 +23,14 @@ body {
 .whereWeWrite {background-color: #B3B3B3;
 				margin-top: 2em;
 				padding: 0em .75em;
-				border-radius: 2em
+				border-radius: 1em;
+				min-height: 100%;
 				} 
 .whereWeWrite > h1 { color:black;
 					text-align:center;
 					padding-top: 1em; }
 .whereWeWrite > p {padding-left: .75em;
-					text-indent: 1em;
+					/*text-indent: 1em;*/
 					line-height: 1.5em;}
 /*this div is currently only used in wholesaling.html*/
 

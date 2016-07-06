@@ -12,13 +12,31 @@
 </head>
 
 <body>
+<!--FacebookSDK-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1112817232124597',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <!-- Top part- -->
 	<div class="pure-menu-fixed topContainer">
-		<h1 id = "visTop" class = "pure-u-1-4">StartREI</h1>
+		<h1 id = "visTop" class = "pure-u-1-4"><a href = "index.html">StartREI</a></h1>
 			<div class = "pure-menu pure-menu-horizontal">
 				<ul class= "pure-menu-list">
 					<li class = "pure-menu-item">
-						<a class = "pure-menu-link" href="">Blog/Tips</a></li>
+						<a class = "pure-menu-link" href="Pages/wholesaling.html">Blog/Tips</a></li>
 					<li class = "pure-menu-item">
 						<a class = "pure-menu-link" href="">Mindset</a></li>
 					<li class = "pure-menu-item">
@@ -39,6 +57,8 @@
 					<h4>The road to Real Estate Investment</h4>
 		</div>
 		<div class = "buttonContainer">
+		 <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+			</div>
 		<h2 class = "pure-button buttonT"><a id = "getStarted" href ="#main">Get Started</a></h2>
 		</div>
 	 </div>
@@ -78,7 +98,9 @@
 </div>
 
 <div class = "pure-g" id = "footer"> <p class = "pure-u-1-1"> More Writing
-<a href = ""> check</a></p></div>
+</p>
+<div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+			</div></div>
 
 		
 		
