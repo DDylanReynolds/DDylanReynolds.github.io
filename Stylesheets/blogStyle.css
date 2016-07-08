@@ -1,5 +1,6 @@
 
-html {background: url("../Images/abstract.jpg") fixed 100%;}
+html {background: url("../Images/abstract.jpg") fixed 100%;
+	box-sizing:border-box;}
 
 body {
   overflow: auto;
@@ -19,16 +20,33 @@ body {
 .pure-menu-link {border-radius: 40px;}
 
 
+.related {background-color: #B3B3B3;
+				margin-top: 2em;
+				padding: 0em .75em;
+				border-radius: 1em;
+				min-height: 500px;
+				box-sizing: border-box;}
+@media screen and (max-width: 64em){
+	.related {background-color: #B3B3B3;
+				padding: 0em .75em;
+				border-radius: 1em;
+				min-height: 100%;
+				margin-top:0;
+				box-sizing: border-box;}
+}
+	
 
 .whereWeWrite {background-color: #B3B3B3;
 				margin-top: 2em;
 				padding: 0em .75em;
 				border-radius: 1em;
 				min-height: 100%;
+				box-sizing: border-box;
 				} 
 .whereWeWrite > h1 { color:black;
 					text-align:center;
-					padding-top: 1em; }
+					padding-top: 1em; 
+					}
 .whereWeWrite > p {padding-left: .75em;
 					line-height: 1.5em;}
 
