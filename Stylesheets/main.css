@@ -1,100 +1,198 @@
-
-html {background: url("../Images/abstract.jpg") fixed 100%;}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
 
 body {
-  overflow: auto;
-}
-
-/*This is the Top Part including nav*/
-.topContainer {background-color: #0D0D0D;
-				width: 100%;
-				opacity: .75;
-				z-index: 10;
-			}
-.topContainer > h1 > a {text-decoration: none;
-						color: white;}
-#visTop {padding-left: 1.5em;
-		color: #FFF;}
-
-/*This makes the hover effect have a curved outline*/
-.pure-menu-link {border-radius: 40px;}
-
-
-
-/*Makes  the ghost div border, centers it, and aligns its text*/
-#ghostTop {margin: 8em auto;
-			border: 1px solid white;
-			color: white;
-			max-width: 50%;
-			text-align: center;}
-											/*Expirament with button stuff to get it to actually center*/
-.buttonT {background-color: teal;
-			position: relative;
-			margin: 0 auto;
-			}
-.buttonT > a {text-decoration: none;
-			color: black;}
-.buttonContainer {margin: 0 auto;
-					max-width: 7.5em;
-					position: relative;}
-
-.scrollOver {position: fixed;
-			height: 25em;
-			width: 100%;
-			z-index: 5;
-			}
-
-#invisibleTop {visibility: hidden;}
-
-.mainContainer {margin-top: 50%;
-	position: relative;
-	background: url("../Images/Mirror.jpg") fixed 100%;
-	z-index: 1;
-			}
-#main {
-margin-top: 42%; }
-
-.main {min-height: 42em;
-		z-index: 1;
-		background-color: rgba(0, 128, 128, .4);	
-		}
-.main > h1 {text-align: center;
-			color: black;
-			}
-.main > p {text-align: center;
-			font-size: 1.5em;}
-
-.pure-menu-list {background-color: #191919;
-height: 100%;}
-
-.pure-menu-item {text-align:center;}
-
-.thirdContainer {background: url("../Images/abstract.jpg") fixed 100%;
-				z-index: 1;
-				height: 42em;
-				position: relative;}
-.third {background-color: rgba(51, 51, 51, .6);
-		z-index: 1;
-		height: 42em;
-		margin: 0;
-		position: relative;
-	}
-
-.back1 {background: url("../Images/beach.jpg") fixed 100%;
-	height: 42em;
-	z-index: 1;
-	position: relative;}
-
-/*Fix backshade on Firefox*/
-.back1Shade {
-			height: 42em;
-			z-index: 1;
-			position: relative;}
-
-#footer {background-color: #0D0D0D;
-	color: #FFF;
-	min-height: 14em;
+  padding-bottom: 40px;
+  color: #5a5a5a;
 }
 
 
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+  #logo {max-height: 55px;
+      position: relative;
+      bottom: 20px}
+  #call {position: absolute;
+    right: 7px;
+    z-index: 10;
+    font-size: 200%;
+    text-shadow: 0 3px 9px red;
+    color: white;
+    top: 56px;}
+  #say {position: absolute;
+    left: 4%;
+    font-size: 110%;
+    z-index: 10;
+    text-shadow: 0 3px 9px black;
+    color: white;
+    top: 43px;}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+.carousel-caption > p {
+  text-shadow: 0px -2px 12px black;
+  color: white;
+  font-weight: 800;
+}
+ .carousel-caption > h1 {
+  font-size: 300%;
+  text-shadow: 0px 3px 3px black;
+}
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+
+
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+   #logo {max-height: 76px;
+      position: relative;
+      bottom: 41px}
+
+
+    #call {position: absolute;
+    right: 100px;
+    z-index: 10;
+    color: white;
+    top: 62px;}
+    #say {position: absolute;
+    left: 11%;
+    text-shadow: 0 3px 9px black;
+    z-index: 10;
+    color: white;
+    top: 65px;}
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  .carousel-caption > h1 {
+  font-size: 400%;
+  text-shadow: 0px 10px 20px black;
+}
+
+  .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 650px;
+}
+}
 
