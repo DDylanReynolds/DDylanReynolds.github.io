@@ -6,6 +6,8 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
+div > img {background-image: #BEAE96;
+          }
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -31,7 +33,10 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+  
 }
+
+
 
   #logo {max-height: 55px;
       position: relative;
@@ -131,26 +136,24 @@ body {
 
 @media (min-width: 768px) {
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
+  
   .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    
+    width: 100%;
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
+    /*height: 72px;*/
   }
+ 
+  .nav > li > a {line-height: 42px;
+    height: 70px;
+    }
 
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-   #logo {max-height: 76px;
+   #logo {max-height: 74px;
       position: relative;
-      bottom: 41px}
+      }
 
 
     #call {position: absolute;

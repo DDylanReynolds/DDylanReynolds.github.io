@@ -1,0 +1,87 @@
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+#logo {max-height: 55px;
+      position: relative;
+      bottom: 20px}
+#call {position: absolute;
+    right: 7px;
+    z-index: 10;
+    font-size: 200%;
+    text-shadow: 0 3px 9px red;
+    color: white;
+    top: 56px;}
+#say {position: absolute;
+    left: 4%;
+    font-size: 110%;
+    z-index: 10;
+    text-shadow: 0 3px 9px black;
+    color: white;
+    top: 43px;}
+.topMargin {
+    margin-top: 125px;
+}
+.divider {margin: 10px 80px 20px 80px;}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+
+
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+   #logo {max-height: 76px;
+      position: relative;
+      bottom: 41px}
+
+
+    #call {position: absolute;
+    right: 100px;
+    z-index: 10;
+    color: white;
+    top: 62px;}
+    #say {position: absolute;
+    left: 11%;
+    text-shadow: 0 3px 9px black;
+    z-index: 10;
+    color: white;
+    top: 65px;}
