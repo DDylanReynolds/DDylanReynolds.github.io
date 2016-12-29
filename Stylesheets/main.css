@@ -61,6 +61,21 @@ div > img {background-image: #BEAE96;
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+  #contactDiv {
+    position:relative;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  #contactDiv > a {
+    position:relative;
+  }
+  #dropper {
+    border: 3px solid blue;
+    position: absolute;
+    top: -60%;
+    left: 5%;
+  }
 
 /* Carousel base class */
 .carousel {
