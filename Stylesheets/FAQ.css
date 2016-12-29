@@ -111,7 +111,7 @@ body{
 
     .col-sm-2{
       min-height: 950px;
-      background: url("../Images/treeBack.jpg");
+      background: url("../Images/goldHouse.jpg") fixed center;
     }
  
 }
