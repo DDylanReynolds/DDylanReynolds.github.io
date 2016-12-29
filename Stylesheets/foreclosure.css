@@ -1,6 +1,3 @@
-body{
-  background-color: #F4F1E6;
-}
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
@@ -43,16 +40,9 @@ body{
     text-shadow: 0 3px 9px black;
     color: white;
     top: 43px;}
-
-
-  .important {
-    height: 125px;
-    border-bottom: 2px solid black;
-    background: linear-gradient(to bottom right, #FFFFFF , #7F7F7F);
-  }
-
-  .divider {margin: 10px 80px 20px 80px;}
-
+     .topMargin {
+    margin-top: 125px;}
+.divider {margin: 10px 80px 20px 80px;}
 
 
 
@@ -99,23 +89,6 @@ body{
     color: white;
     top: 65px;}
 
-    .btn-block{ margin-bottom: 5px; }
-    .btn{text-align: left;}
 
-/*This is the center bar*/
-    .col-sm-8 {
-      border-left: 1px solid black;
-      border-right:1px solid black;
-    }
-/*Left and right bars here*/
-
-    .col-sm-2{
-      min-height: 950px;
-      background: url("../Images/treeBack.jpg");
-    }
  
 }
-
-
-
-
