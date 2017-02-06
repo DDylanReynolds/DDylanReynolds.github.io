@@ -73,7 +73,7 @@ div > img {background-image: #BEAE96;
   #dropper {
     border: 3px solid blue;
     position: absolute;
-    top: -60%;
+    top: -60  %;
     left: 5%;
   }
 
