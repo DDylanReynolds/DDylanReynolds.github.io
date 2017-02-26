@@ -110,7 +110,7 @@ body{
 /*Left and right bars here*/
 
     .col-sm-2{
-      min-height: 1000px;
+      min-height: 750px;
       background: url("../Images/goldHouse.jpg") fixed center;
     }
     
